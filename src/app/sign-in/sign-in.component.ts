@@ -31,10 +31,12 @@ export class SignInComponent implements OnInit {
 
    }
 
+  // main
   ngOnInit(): void {
     this.signinForm = this.fb.group({
       // validators only allow numeric values and makes the field required
-      studentId: ['', Validators.compose([Validators.required, Validators.pattern('^[0-9]*$')])]
+      studentId: ['', Validators.compose([Validators.required, Validators.pattern('^[0-9]*$')])],
+
     })
 
 
